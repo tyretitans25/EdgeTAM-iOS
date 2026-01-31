@@ -1,0 +1,299 @@
+{
+  "" : {
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM-iOS-primary.dia",
+    "emit-module-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM-iOS-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM-iOS-primary-emit-module.dia",
+    "pch" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM-iOS-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM-iOS-primary.swiftdeps"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/ContentView.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Core/DependencyContainer.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DependencyContainer.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DependencyContainer.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DependencyContainer.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DependencyContainer.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DependencyContainer.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DependencyContainer.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DependencyContainer.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DependencyContainer~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/EdgeTAM_iOSApp.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM_iOSApp.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM_iOSApp.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM_iOSApp.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM_iOSApp.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM_iOSApp.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM_iOSApp.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM_iOSApp.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/EdgeTAM_iOSApp~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Models/DataModels.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DataModels.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DataModels.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DataModels.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DataModels.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DataModels.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DataModels.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DataModels.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/DataModels~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Models/ErrorTypes.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ErrorTypes.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ErrorTypes.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ErrorTypes.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ErrorTypes.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ErrorTypes.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ErrorTypes.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ErrorTypes.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ErrorTypes~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Protocols/CameraManagerProtocol.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManagerProtocol.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManagerProtocol.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManagerProtocol.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManagerProtocol.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManagerProtocol.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManagerProtocol.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManagerProtocol.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManagerProtocol~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Protocols/ExportManagerProtocol.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManagerProtocol.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManagerProtocol.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManagerProtocol.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManagerProtocol.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManagerProtocol.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManagerProtocol.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManagerProtocol.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManagerProtocol~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Protocols/MaskRendererProtocol.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRendererProtocol.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRendererProtocol.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRendererProtocol.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRendererProtocol.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRendererProtocol.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRendererProtocol.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRendererProtocol.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRendererProtocol~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Protocols/ModelManagerProtocol.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManagerProtocol.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManagerProtocol.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManagerProtocol.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManagerProtocol.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManagerProtocol.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManagerProtocol.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManagerProtocol.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManagerProtocol~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Protocols/ObjectTrackerProtocol.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTrackerProtocol.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTrackerProtocol.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTrackerProtocol.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTrackerProtocol.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTrackerProtocol.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTrackerProtocol.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTrackerProtocol.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTrackerProtocol~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Protocols/PerformanceMonitorProtocol.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitorProtocol.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitorProtocol.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitorProtocol.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitorProtocol.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitorProtocol.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitorProtocol.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitorProtocol.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitorProtocol~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Protocols/PrivacyManagerProtocol.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManagerProtocol.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManagerProtocol.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManagerProtocol.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManagerProtocol.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManagerProtocol.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManagerProtocol.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManagerProtocol.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManagerProtocol~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Protocols/PromptHandlerProtocol.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandlerProtocol.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandlerProtocol.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandlerProtocol.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandlerProtocol.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandlerProtocol.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandlerProtocol.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandlerProtocol.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandlerProtocol~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Protocols/VideoSegmentationEngineProtocol.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngineProtocol.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngineProtocol.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngineProtocol.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngineProtocol.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngineProtocol.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngineProtocol.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngineProtocol.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngineProtocol~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Services/CameraManager.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManager.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManager.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManager.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManager.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManager.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManager.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManager.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraManager~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Services/ExportManager.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManager.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManager.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManager.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManager.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManager.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManager.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManager.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportManager~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Services/MaskRenderer.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRenderer.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRenderer.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRenderer.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRenderer.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRenderer.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRenderer.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRenderer.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/MaskRenderer~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Services/ModelManager.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManager.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManager.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManager.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManager.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManager.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManager.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManager.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ModelManager~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Services/ObjectTracker.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTracker.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTracker.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTracker.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTracker.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTracker.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTracker.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTracker.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ObjectTracker~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Services/PerformanceMonitor.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitor.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitor.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitor.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitor.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitor.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitor.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitor.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PerformanceMonitor~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Services/PermissionHelper.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PermissionHelper.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PermissionHelper.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PermissionHelper.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PermissionHelper.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PermissionHelper.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PermissionHelper.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PermissionHelper.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PermissionHelper~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Services/PrivacyManager.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManager.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManager.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManager.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManager.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManager.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManager.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManager.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PrivacyManager~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Services/PromptHandler.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandler.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandler.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandler.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandler.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandler.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandler.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandler.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/PromptHandler~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Services/VideoSegmentationEngine.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngine.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngine.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngine.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngine.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngine.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngine.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngine.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/VideoSegmentationEngine~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/ViewModels/CameraViewModel.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraViewModel.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraViewModel.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraViewModel.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraViewModel.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraViewModel.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraViewModel.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraViewModel.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraViewModel~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Views/CameraView.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraView.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraView.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraView.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraView.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraView.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraView.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraView.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/CameraView~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Views/ExportView.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportView.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportView.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportView.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportView.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportView.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportView.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportView.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/ExportView~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/EdgeTAM-iOS/Views/SettingsView.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/build/EdgeTAM-iOS.build/Debug-iphoneos/EdgeTAM-iOS.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}
