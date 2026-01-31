@@ -3,7 +3,7 @@ import CoreGraphics
 import CoreVideo
 
 /// Protocol defining user interaction prompt handling
-protocol PromptHandlerProtocol: AnyObject {
+protocol PromptHandlerProtocol: AnyObject, Sendable {
     /// Adds a point prompt at the specified location
     /// - Parameters:
     ///   - location: The tap location in view coordinates

@@ -4,7 +4,7 @@ import CoreMedia
 import CoreGraphics
 
 /// Implementation of object tracking for temporal consistency across video frames
-class ObjectTracker: ObjectTrackerProtocol {
+class ObjectTracker: ObjectTrackerProtocol, @unchecked Sendable {
     
     // MARK: - Properties
     

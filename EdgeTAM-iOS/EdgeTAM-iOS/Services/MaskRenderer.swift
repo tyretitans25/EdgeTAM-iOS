@@ -6,7 +6,7 @@ import MetalKit
 import CoreImage
 
 /// Metal-based implementation of mask overlay rendering
-class MaskRenderer: MaskRendererProtocol {
+class MaskRenderer: MaskRendererProtocol, @unchecked Sendable {
     
     // MARK: - Properties
     

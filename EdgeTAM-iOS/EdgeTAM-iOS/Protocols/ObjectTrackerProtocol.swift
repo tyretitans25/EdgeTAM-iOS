@@ -3,7 +3,7 @@ import CoreGraphics
 import CoreVideo
 
 /// Protocol defining object tracking operations across video frames
-protocol ObjectTrackerProtocol: AnyObject {
+protocol ObjectTrackerProtocol: AnyObject, Sendable {
     /// Initializes tracking for a set of segmented objects
     /// - Parameter objects: Initial segmented objects to track
     /// - Throws: EdgeTAMError if tracking initialization fails

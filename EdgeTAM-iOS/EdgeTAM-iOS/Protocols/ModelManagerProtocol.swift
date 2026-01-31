@@ -3,7 +3,7 @@ import CoreML
 import CoreVideo
 
 /// Protocol defining EdgeTAM CoreML model management and inference operations
-protocol ModelManagerProtocol: AnyObject {
+protocol ModelManagerProtocol: AnyObject, Sendable {
     /// Loads the EdgeTAM CoreML model into memory
     /// - Throws: EdgeTAMError if model loading fails
     func loadModel() async throws

@@ -3,7 +3,7 @@ import UIKit
 
 /// Protocol for performance monitoring and system resource tracking
 @MainActor
-protocol PerformanceMonitorProtocol: AnyObject {
+protocol PerformanceMonitorProtocol: AnyObject, Sendable {
     /// Current frames per second
     var currentFPS: Double { get }
     

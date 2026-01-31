@@ -23,7 +23,7 @@ struct ExportResult: Sendable {
 }
 
 /// Protocol for video export functionality
-protocol ExportManagerProtocol: AnyObject {
+protocol ExportManagerProtocol: AnyObject, Sendable {
     /// Delegate for export progress and completion
     var delegate: ExportManagerDelegate? { get set }
     

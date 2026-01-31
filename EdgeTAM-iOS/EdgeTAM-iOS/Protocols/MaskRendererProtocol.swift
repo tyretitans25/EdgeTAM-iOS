@@ -4,7 +4,7 @@ import UIKit
 import Metal
 
 /// Protocol defining mask overlay rendering operations
-protocol MaskRendererProtocol: AnyObject {
+protocol MaskRendererProtocol: AnyObject, Sendable {
     /// Renders segmentation masks onto a video frame
     /// - Parameters:
     ///   - masks: Array of segmentation masks to render
