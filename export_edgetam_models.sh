@@ -15,12 +15,12 @@ EDGETAM_REPO="EdgeTAM-repo"
 OUTPUT_DIR="coreml_models"
 EXPORT_SCRIPT="/Users/tyretitans/CV_Robotiscs_Lab/edgeTAM/EdgeTAM-iOS/export_to_coreml.py"
 
-# Step 1: Check if EdgeTAM repo exists
+# Step 1: Check if SAM2 repo exists
 if [ ! -d "$EDGETAM_REPO" ]; then
-    echo "Step 1: Cloning EdgeTAM repository..."
-    git clone https://github.com/gaomingqi/Track-Anything.git $EDGETAM_REPO
+    echo "Step 1: Cloning Segment Anything 2 repository..."
+    git clone https://github.com/facebookresearch/segment-anything-2.git $EDGETAM_REPO
 else
-    echo "Step 1: EdgeTAM repository already exists"
+    echo "Step 1: Segment Anything 2 repository already exists"
 fi
 
 cd $EDGETAM_REPO
@@ -44,22 +44,17 @@ pip install -q coremltools hydra-core omegaconf pillow
 
 # Step 3: Download checkpoint
 echo ""
-echo "Step 3: Downloading EdgeTAM checkpoint..."
+echo "Step 3: Downloading EdgeTAM/SAM2 checkpoint..."
 
-if [ ! -f "checkpoints/edgetam.pt" ]; then
+if [ ! -f "checkpoints/sam2_hiera_large.pt" ]; then
     mkdir -p checkpoints
     cd checkpoints
     
-    if [ -f "../checkpoints/download_ckpts.sh" ]; then
-        echo "  Using official download script..."
-        bash ../checkpoints/download_ckpts.sh
+    echo "  Downloading SAM2 checkpoint..."
+    if command -v wget &> /dev/null; then
+        wget https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt
     else
-        echo "  Downloading manually..."
-        if command -v wget &> /dev/null; then
-            wget https://huggingface.co/spaces/VIPLab/Track-Anything/resolve/main/checkpoints/edgetam.pt
-        else
-            curl -L -O https://huggingface.co/spaces/VIPLab/Track-Anything/resolve/main/checkpoints/edgetam.pt
-        fi
+        curl -L -O https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt
     fi
     cd ..
 else
@@ -67,8 +62,8 @@ else
 fi
 
 # Verify checkpoint
-if [ -f "checkpoints/edgetam.pt" ]; then
-    FILE_SIZE=$(du -h checkpoints/edgetam.pt | cut -f1)
+if [ -f "checkpoints/sam2_hiera_large.pt" ]; then
+    FILE_SIZE=$(du -h checkpoints/sam2_hiera_large.pt | cut -f1)
     echo "  ✓ Checkpoint ready: $FILE_SIZE"
 else
     echo "  ✗ Failed to download checkpoint"
@@ -79,13 +74,22 @@ fi
 echo ""
 echo "Step 4: Verifying configuration..."
 
-CONFIG_FILE="sam2/configs/edgetam/edgetam_config.yaml"
+CONFIG_FILE="sam2_configs/sam2_hiera_l.yaml"
 if [ -f "$CONFIG_FILE" ]; then
     echo "  ✓ Config file found: $CONFIG_FILE"
 else
     echo "  ✗ Config file not found: $CONFIG_FILE"
-    echo "  Please check EdgeTAM repository structure"
-    exit 1
+    echo "  Checking alternative locations..."
+    
+    # Try alternative paths
+    if [ -f "sam2/configs/sam2/sam2_hiera_l.yaml" ]; then
+        CONFIG_FILE="sam2/configs/sam2/sam2_hiera_l.yaml"
+        echo "  ✓ Found at: $CONFIG_FILE"
+    else
+        echo "  ✗ Config file not found"
+        echo "  Please check SAM2 repository structure"
+        exit 1
+    fi
 fi
 
 # Step 5: Run export
@@ -96,7 +100,7 @@ echo ""
 
 python $EXPORT_SCRIPT \
     --sam2_cfg $CONFIG_FILE \
-    --sam2_checkpoint checkpoints/edgetam.pt \
+    --sam2_checkpoint checkpoints/sam2_hiera_large.pt \
     --output_dir $OUTPUT_DIR
 
 # Step 6: Verify output
