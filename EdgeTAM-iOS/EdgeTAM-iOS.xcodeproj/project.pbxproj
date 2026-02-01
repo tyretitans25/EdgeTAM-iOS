@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F1189618D09B68B6C7CE73 /* PipelineIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8155BBEEAF4F4394FED5801 /* PipelineIntegrationTest.swift */; };
 		04D0B400DFF1458FF442374C /* Combine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BC676F46D7E3E58BBFA1BE /* Combine.framework */; };
 		07384695E40C22373B90E6BA /* VideoSegmentationEngineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9990402815485175FBD436EB /* VideoSegmentationEngineProtocol.swift */; };
 		10F480C83C5D3565C49E3B98 /* ObjectTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF40B630ECE2BB602AD48552 /* ObjectTrackerTests.swift */; };
@@ -18,9 +19,12 @@
 		206AB06A3262A787E84B2A8C /* CameraManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BCBCE4CD25D9D2346E7B04 /* CameraManagerTests.swift */; };
 		23C4B532AE34A06E21381CAD /* MaskRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD666C786C7FAA7CC7AA278 /* MaskRendererTests.swift */; };
 		256DE8E73CBE44D427A52AB8 /* PromptHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52091FE2688DB0FA344D64D6 /* PromptHandler.swift */; };
+		269A2A057AE98949F369D933 /* MaskRendererImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE76DA07592F9525813A3CB /* MaskRendererImpl.swift */; };
 		26EC2FB7546B0264F2B823E0 /* ExportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A86DE8423664D91B5676D /* ExportManager.swift */; };
+		34C5A3F66C97B217D00C1007 /* CoreImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCBE59F1EBB2F4AAEE85E3E /* CoreImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3815663C2179E1C8C585D4A9 /* VideoSegmentationEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68948E05EE7D372CA80872AE /* VideoSegmentationEngineTests.swift */; };
 		3C5AECDC95C5FF2DAE54D178 /* PerformanceMonitorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BD302F3E6C3A1918ACC41 /* PerformanceMonitorProtocol.swift */; };
+		3FA8B6BFA78BD48092931192 /* ModelSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282D04EF6A27680B69E94952 /* ModelSetupView.swift */; };
 		42E5096904E6AEE6D1D187FD /* CameraModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEBA7BD83C0FB27793E7C9 /* CameraModelIntegrationTests.swift */; };
 		493A1ECFA5A948060E960456 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5670098D24E6C8C3FF07C6A /* Vision.framework */; };
 		4C5ED9B72908C788E57506C5 /* CameraManagerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B798A8E1476FA2257B1EBD /* CameraManagerIntegrationTests.swift */; };
@@ -34,7 +38,9 @@
 		6B92E080430CAC7D245AFEE0 /* PerformanceMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBBD6D16BE2D3C959021083 /* PerformanceMonitorTests.swift */; };
 		7104C0E8BB15E263B9DEF09B /* ExportManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78212E3C737F4F4A35143774 /* ExportManagerProtocol.swift */; };
 		760242A158E2E838FF7C6A87 /* PromptHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9093C99B3B2D122DDBF5C4 /* PromptHandlerProtocol.swift */; };
+		79D4170068E07E58C7A23F95 /* Combine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6BC676F46D7E3E58BBFA1BE /* Combine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AA9CA85E4C4BAF775556C0F /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC83A76560ADE286BC83AAE /* CoreML.framework */; };
+		7F657C5DBE628372045D9152 /* MetalKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3743AFD5BF4B0623B6F4A70F /* MetalKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		81F08357FD9E622C0993F549 /* PrivacyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27321EA9159518A3C2BACA /* PrivacyManagerTests.swift */; };
 		8A41D262E027F1831FD4D720 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3743AFD5BF4B0623B6F4A70F /* MetalKit.framework */; };
 		8B50FB9EE6540513D4688D5E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8053E4F06548C53564CD6E6 /* Metal.framework */; };
@@ -45,17 +51,22 @@
 		9C853E67872DF39A128116DD /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A485A3CF185D5B5F4763E25 /* CameraViewModel.swift */; };
 		9D68D197926602E3D56A493D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DDE58C472D652DEB4E442 /* SettingsView.swift */; };
 		A826BFE65FF0F93831AC49AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1808CAC54AA8DCDB9463E1A6 /* ContentView.swift */; };
+		AE9CD966609AD67E4C8F0D86 /* Vision.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5670098D24E6C8C3FF07C6A /* Vision.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B077352D6A6DBCA63303E540 /* MaskRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87ADB4D1BDE9C1DF9F4003 /* MaskRenderer.swift */; };
 		B5F040B986EEB8A32D38A565 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A399FEDF189492E5B07F8FF6 /* ExportView.swift */; };
 		BCB42D2EBA8CCA1FA970AC00 /* ModelManagerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953EC4745FC43BEB5388355 /* ModelManagerIntegrationTests.swift */; };
 		C3CEF827AF52ED47766D4E80 /* PermissionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A714825027789C9D83C2A /* PermissionHelper.swift */; };
+		CF95053F2B399AEB9CFFDB73 /* Metal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8053E4F06548C53564CD6E6 /* Metal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D802249EF4430CF34ED199E7 /* CameraManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7741253F64BD3501726E49B /* CameraManagerProtocol.swift */; };
 		DA9949B11F9E60873C50F8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF7DA8CA3B6B0ACEC89B05 /* Assets.xcassets */; };
 		DAC1F76D8918B90C443BCE73 /* VideoProcessingPipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18EA3E3ABCA4B56ACFEFB3 /* VideoProcessingPipelineTests.swift */; };
 		DB6C7226F07B87F6B3EDA0E1 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630A81E7A42F5D45F835325 /* DependencyContainer.swift */; };
+		DC06FA82A37007CC803E89F0 /* AVFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88D206DA7A6E3BD9044A80AC /* AVFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD446D54C1D1B5104463AFAD /* SwiftUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0196C7FE4F12AD5D76FFC1E /* SwiftUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E1C3F4E492A6FBEF60014F51 /* ModelManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FA97D410684ABAF2A7197B /* ModelManagerProtocol.swift */; };
 		E813154C12D511FBD0EDBE08 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1112A7ADDBFA09AD605104A /* DataModels.swift */; };
 		EF6730E56F69F225CD88AE5D /* PrivacyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11D79E895CFE9AF0717B3F5 /* PrivacyManager.swift */; };
+		F4CD4A03421242186A202ABC /* CoreML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC83A76560ADE286BC83AAE /* CoreML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5106F3541FB17DF6D518EFD /* ObjectTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E291C2C91D981F9B2E695 /* ObjectTracker.swift */; };
 		FB1EBC64253469708BDE9EB9 /* MaskRendererIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26630956B252E423E122D5E /* MaskRendererIntegrationTests.swift */; };
 /* End PBXBuildFile section */
@@ -70,16 +81,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		218680AC76EE022F5C25F279 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD446D54C1D1B5104463AFAD /* SwiftUI.framework in Embed Frameworks */,
+				DC06FA82A37007CC803E89F0 /* AVFoundation.framework in Embed Frameworks */,
+				F4CD4A03421242186A202ABC /* CoreML.framework in Embed Frameworks */,
+				CF95053F2B399AEB9CFFDB73 /* Metal.framework in Embed Frameworks */,
+				7F657C5DBE628372045D9152 /* MetalKit.framework in Embed Frameworks */,
+				34C5A3F66C97B217D00C1007 /* CoreImage.framework in Embed Frameworks */,
+				AE9CD966609AD67E4C8F0D86 /* Vision.framework in Embed Frameworks */,
+				79D4170068E07E58C7A23F95 /* Combine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		040E4908E056DF6D301B5316 /* VideoSegmentationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSegmentationEngine.swift; sourceTree = "<group>"; };
 		0D18EA3E3ABCA4B56ACFEFB3 /* VideoProcessingPipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcessingPipelineTests.swift; sourceTree = "<group>"; };
 		0EBBD6D16BE2D3C959021083 /* PerformanceMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMonitorTests.swift; sourceTree = "<group>"; };
 		1808CAC54AA8DCDB9463E1A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1BCBE59F1EBB2F4AAEE85E3E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		1BCBE59F1EBB2F4AAEE85E3E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreImage.framework; sourceTree = "<group>"; };
 		1E6864DA5CC0B06E0E01D542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26B798A8E1476FA2257B1EBD /* CameraManagerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManagerIntegrationTests.swift; sourceTree = "<group>"; };
+		282D04EF6A27680B69E94952 /* ModelSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSetupView.swift; sourceTree = "<group>"; };
 		2953EC4745FC43BEB5388355 /* ModelManagerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManagerIntegrationTests.swift; sourceTree = "<group>"; };
-		3743AFD5BF4B0623B6F4A70F /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		3743AFD5BF4B0623B6F4A70F /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MetalKit.framework; sourceTree = "<group>"; };
 		45FEBA7BD83C0FB27793E7C9 /* CameraModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModelIntegrationTests.swift; sourceTree = "<group>"; };
 		4CBF7DA8CA3B6B0ACEC89B05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E27321EA9159518A3C2BACA /* PrivacyManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyManagerTests.swift; sourceTree = "<group>"; };
@@ -96,21 +129,21 @@
 		7A9093C99B3B2D122DDBF5C4 /* PromptHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptHandlerProtocol.swift; sourceTree = "<group>"; };
 		822BC722BFA40D2A3A616759 /* EdgeTAM-iOSTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "EdgeTAM-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		871BC31DFEBE62A9C0BA1FC0 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
-		88D206DA7A6E3BD9044A80AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		88D206DA7A6E3BD9044A80AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVFoundation.framework; sourceTree = "<group>"; };
 		89BCBCE4CD25D9D2346E7B04 /* CameraManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManagerTests.swift; sourceTree = "<group>"; };
 		8A2A86DE8423664D91B5676D /* ExportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportManager.swift; sourceTree = "<group>"; };
 		8FFA0ED163D1303C8A6C1444 /* ObjectTrackerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTrackerProtocol.swift; sourceTree = "<group>"; };
 		918212DFFEE6BC97B0B948E8 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		9990402815485175FBD436EB /* VideoSegmentationEngineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSegmentationEngineProtocol.swift; sourceTree = "<group>"; };
-		A0196C7FE4F12AD5D76FFC1E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A0196C7FE4F12AD5D76FFC1E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftUI.framework; sourceTree = "<group>"; };
 		A399FEDF189492E5B07F8FF6 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
 		A630A81E7A42F5D45F835325 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		A79BD302F3E6C3A1918ACC41 /* PerformanceMonitorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMonitorProtocol.swift; sourceTree = "<group>"; };
-		A8053E4F06548C53564CD6E6 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		A8053E4F06548C53564CD6E6 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Metal.framework; sourceTree = "<group>"; };
 		AC87ADB4D1BDE9C1DF9F4003 /* MaskRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskRenderer.swift; sourceTree = "<group>"; };
 		B11D79E895CFE9AF0717B3F5 /* PrivacyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyManager.swift; sourceTree = "<group>"; };
-		B5670098D24E6C8C3FF07C6A /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
-		B6BC676F46D7E3E58BBFA1BE /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = System/Library/Frameworks/Combine.framework; sourceTree = SDKROOT; };
+		B5670098D24E6C8C3FF07C6A /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Vision.framework; sourceTree = "<group>"; };
+		B6BC676F46D7E3E58BBFA1BE /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Combine.framework; sourceTree = "<group>"; };
 		BA08AB0F17348B98964ADAB0 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		BAA66D5C8FF9FB802C1D2193 /* PrivacyManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyManagerProtocol.swift; sourceTree = "<group>"; };
 		C8AC8E5668E889DAC17FFAB9 /* EdgeTAM_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeTAM_iOSApp.swift; sourceTree = "<group>"; };
@@ -120,10 +153,12 @@
 		E1112A7ADDBFA09AD605104A /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		E26630956B252E423E122D5E /* MaskRendererIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskRendererIntegrationTests.swift; sourceTree = "<group>"; };
 		E4FE5FCADBE9C9DE8F341AA8 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
-		EFC83A76560ADE286BC83AAE /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		E8155BBEEAF4F4394FED5801 /* PipelineIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineIntegrationTest.swift; sourceTree = "<group>"; };
+		EFC83A76560ADE286BC83AAE /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreML.framework; sourceTree = "<group>"; };
 		EFC8A1B51DD1650B3EDB238F /* EdgeTAM-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "EdgeTAM-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F017AE1D6B502FEF67BB224A /* MaskRendererProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskRendererProtocol.swift; sourceTree = "<group>"; };
 		F6E0955EB07BC0E26E6F1FDB /* ModelManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManagerTests.swift; sourceTree = "<group>"; };
+		FDE76DA07592F9525813A3CB /* MaskRendererImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskRendererImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +186,7 @@
 				BA08AB0F17348B98964ADAB0 /* CameraManager.swift */,
 				8A2A86DE8423664D91B5676D /* ExportManager.swift */,
 				AC87ADB4D1BDE9C1DF9F4003 /* MaskRenderer.swift */,
+				FDE76DA07592F9525813A3CB /* MaskRendererImpl.swift */,
 				E4FE5FCADBE9C9DE8F341AA8 /* ModelManager.swift */,
 				D28E291C2C91D981F9B2E695 /* ObjectTracker.swift */,
 				543AEE10ADAB816F9BF4F147 /* PerformanceMonitor.swift */,
@@ -160,6 +196,14 @@
 				040E4908E056DF6D301B5316 /* VideoSegmentationEngine.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2079FE408DBD60154659589F /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				E8155BBEEAF4F4394FED5801 /* PipelineIntegrationTest.swift */,
+			);
+			path = Integration;
 			sourceTree = "<group>";
 		};
 		403A32C7A7EA0EBBFF107828 /* Core */ = {
@@ -177,6 +221,7 @@
 				1808CAC54AA8DCDB9463E1A6 /* ContentView.swift */,
 				C8AC8E5668E889DAC17FFAB9 /* EdgeTAM_iOSApp.swift */,
 				403A32C7A7EA0EBBFF107828 /* Core */,
+				2079FE408DBD60154659589F /* Integration */,
 				C92B8086C039426A35BF3A73 /* Models */,
 				733390F9419113C4B63B018C /* Preview Content */,
 				51D274FD29A3E48CDA97DD85 /* Protocols */,
@@ -258,6 +303,7 @@
 			children = (
 				918212DFFEE6BC97B0B948E8 /* CameraView.swift */,
 				A399FEDF189492E5B07F8FF6 /* ExportView.swift */,
+				282D04EF6A27680B69E94952 /* ModelSetupView.swift */,
 				649DDE58C472D652DEB4E442 /* SettingsView.swift */,
 			);
 			path = Views;
@@ -320,6 +366,7 @@
 				27E995D5ABD6EB2848B84443 /* Sources */,
 				441E04BED58BC95EC688524C /* Resources */,
 				672AD508A26DF8B92CA61F82 /* Frameworks */,
+				218680AC76EE022F5C25F279 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,14 +387,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-					0156DC7C2B3078E58CC767A8 = {
-						ProvisioningStyle = Automatic;
-					};
-					3B94C9AA4A2CF67654FB4E89 = {
-						ProvisioningStyle = Automatic;
-					};
-				};
 			};
 			buildConfigurationList = F6CE6D66915F3B854F1CB185 /* Build configuration list for PBXProject "EdgeTAM-iOS" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -399,14 +438,17 @@
 				7104C0E8BB15E263B9DEF09B /* ExportManagerProtocol.swift in Sources */,
 				B5F040B986EEB8A32D38A565 /* ExportView.swift in Sources */,
 				B077352D6A6DBCA63303E540 /* MaskRenderer.swift in Sources */,
+				269A2A057AE98949F369D933 /* MaskRendererImpl.swift in Sources */,
 				565D22B8210E5CCB79F65CA9 /* MaskRendererProtocol.swift in Sources */,
 				17EAAD21B3F1E883D6D0FDD2 /* ModelManager.swift in Sources */,
 				E1C3F4E492A6FBEF60014F51 /* ModelManagerProtocol.swift in Sources */,
+				3FA8B6BFA78BD48092931192 /* ModelSetupView.swift in Sources */,
 				F5106F3541FB17DF6D518EFD /* ObjectTracker.swift in Sources */,
 				55ABDF47F5FEDF9DE31A78CA /* ObjectTrackerProtocol.swift in Sources */,
 				12890205499B8BD8D90C87EC /* PerformanceMonitor.swift in Sources */,
 				3C5AECDC95C5FF2DAE54D178 /* PerformanceMonitorProtocol.swift in Sources */,
 				C3CEF827AF52ED47766D4E80 /* PermissionHelper.swift in Sources */,
+				03F1189618D09B68B6C7CE73 /* PipelineIntegrationTest.swift in Sources */,
 				EF6730E56F69F225CD88AE5D /* PrivacyManager.swift in Sources */,
 				15D3B85C3AC8E6295004BE91 /* PrivacyManagerProtocol.swift in Sources */,
 				256DE8E73CBE44D427A52AB8 /* PromptHandler.swift in Sources */,
@@ -452,21 +494,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.edgetam.EdgeTAM-iOSTests";
 				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EdgeTAM-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EdgeTAM-iOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EdgeTAM-iOS.app/EdgeTAM-iOS";
 			};
 			name = Release;
 		};
@@ -474,28 +511,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"EdgeTAM-iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "EdgeTAM-iOS/Preview Content";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
 				INFOPLIST_KEY_NSCameraUsageDescription = "EdgeTAM requires camera access for real-time video segmentation and object tracking.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "EdgeTAM needs photo library access to save processed videos with segmentation masks.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.edgetam.EdgeTAM-iOS";
 				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,21 +535,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.edgetam.EdgeTAM-iOSTests";
 				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EdgeTAM-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EdgeTAM-iOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EdgeTAM-iOS.app/EdgeTAM-iOS";
 			};
 			name = Debug;
 		};
@@ -646,28 +671,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"EdgeTAM-iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "EdgeTAM-iOS/Preview Content";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
 				INFOPLIST_KEY_NSCameraUsageDescription = "EdgeTAM requires camera access for real-time video segmentation and object tracking.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "EdgeTAM needs photo library access to save processed videos with segmentation masks.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.edgetam.EdgeTAM-iOS";
 				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

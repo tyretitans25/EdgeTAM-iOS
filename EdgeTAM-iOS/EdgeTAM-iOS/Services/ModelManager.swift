@@ -212,8 +212,17 @@ private extension ModelManager {
     /// Loads the CoreML model from the app bundle
     func loadCoreMLModel() throws -> MLModel {
         // Try to find the model in the app bundle
-        guard let modelURL = Bundle.main.url(forResource: configuration.modelName, withExtension: "mlmodelc") ??
-                Bundle.main.url(forResource: configuration.modelName, withExtension: "mlmodel") else {
+        // Check for compiled model first (.mlmodelc), then source model (.mlmodel)
+        let modelURL = Bundle.main.url(forResource: configuration.modelName, withExtension: "mlmodelc") ??
+                       Bundle.main.url(forResource: configuration.modelName, withExtension: "mlmodel")
+        
+        guard let url = modelURL else {
+            logger.error("EdgeTAM model '\(self.configuration.modelName)' not found in app bundle")
+            logger.info("To use this app, you need to:")
+            logger.info("1. Convert EdgeTAM PyTorch model to CoreML format")
+            logger.info("2. Add the EdgeTAM.mlpackage file to the Xcode project")
+            logger.info("3. Ensure the model is added to the EdgeTAM-iOS target")
+            logger.info("See README.md for detailed conversion instructions")
             throw EdgeTAMError.modelNotFound(configuration.modelName)
         }
         
@@ -230,8 +239,8 @@ private extension ModelManager {
         
         // Load the model
         do {
-            let model = try MLModel(contentsOf: modelURL, configuration: modelConfig)
-            logger.info("CoreML model loaded from: \(modelURL.lastPathComponent)")
+            let model = try MLModel(contentsOf: url, configuration: modelConfig)
+            logger.info("CoreML model loaded from: \(url.lastPathComponent)")
             return model
         } catch {
             logger.error("Failed to load CoreML model: \(error.localizedDescription)")
