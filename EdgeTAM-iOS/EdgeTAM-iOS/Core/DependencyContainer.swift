@@ -158,7 +158,7 @@ extension DependencyContainer {
         let cameraManager: CameraManagerProtocol = CameraManager()
         register(cameraManager, as: CameraManagerProtocol.self)
         
-        let modelManager: ModelManagerProtocol = ModelManager()
+        let modelManager: ModelManagerProtocol = PyTorchModelManager()
         register(modelManager, as: ModelManagerProtocol.self)
         
         let objectTracker: ObjectTrackerProtocol = ObjectTracker()

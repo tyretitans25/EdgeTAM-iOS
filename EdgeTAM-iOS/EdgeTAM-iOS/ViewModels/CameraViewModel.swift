@@ -17,11 +17,14 @@ final class CameraViewModel: ObservableObject {
     @Published var maskOpacity: Double = 0.6
     @Published var hasProcessedFrames = false
     @Published var isSwitchingCamera = false
+    @Published var isCameraReady = false
     
     // MARK: - Properties
     
-    /// Camera capture session
-    let captureSession = AVCaptureSession()
+    /// Camera capture session - will be set from CameraManager
+    var captureSession: AVCaptureSession {
+        return (cameraManager as? CameraManager)?.getCaptureSession() ?? AVCaptureSession()
+    }
     
     /// Dependencies
     private var cameraManager: CameraManagerProtocol?
@@ -29,6 +32,9 @@ final class CameraViewModel: ObservableObject {
     private var promptHandler: PromptHandlerProtocol?
     private var performanceMonitor: PerformanceMonitorProtocol?
     private var privacyManager: PrivacyManagerProtocol?
+    
+    /// Video pipeline coordinator
+    private var pipelineCoordinator: VideoPipelineCoordinator?
     
     /// Logger
     private let logger = Logger(subsystem: "com.edgetam.ios", category: "CameraViewModel")
@@ -65,13 +71,9 @@ final class CameraViewModel: ObservableObject {
             performanceMonitor = try container.resolve(PerformanceMonitorProtocol.self)
             privacyManager = try container.resolve(PrivacyManagerProtocol.self)
             
-            // Connect camera manager to capture session
-            _ = cameraManager
-            // The capture session is managed by CameraManager, so we get it from there
-            // This ensures proper integration between UI and camera management
-            
             setupDelegates()
             setupBindings()
+            setupVideoPipeline()
             
             logger.info("Dependencies configured with all services integrated")
         } catch {
@@ -103,8 +105,20 @@ final class CameraViewModel: ObservableObject {
     func startCamera() {
         Task {
             do {
+                logger.info("Starting camera session...")
                 try await cameraManager?.startSession()
-                logger.info("Camera started successfully")
+                logger.info("Camera started successfully - session should be running")
+                
+                // Verify session is running
+                if let manager = cameraManager as? CameraManager {
+                    let session = manager.getCaptureSession()
+                    logger.info("Camera session running: \(session.isRunning)")
+                    logger.info("Camera session inputs: \(session.inputs.count)")
+                    logger.info("Camera session outputs: \(session.outputs.count)")
+                    
+                    // Mark camera as ready
+                    isCameraReady = session.isRunning
+                }
             } catch {
                 currentError = EdgeTAMError.from(error)
                 logger.error("Failed to start camera: \(error.localizedDescription)")
@@ -134,6 +148,10 @@ final class CameraViewModel: ObservableObject {
             do {
                 try await videoSegmentationEngine?.startProcessing()
                 performanceMonitor?.startMonitoring()
+                
+                // Enable frame processing in pipeline coordinator
+                pipelineCoordinator?.setProcessingEnabled(true)
+                
                 isProcessing = true
                 currentError = nil
                 logger.info("Processing started")
@@ -145,6 +163,9 @@ final class CameraViewModel: ObservableObject {
     }
     
     func stopProcessing() {
+        // Disable frame processing in pipeline coordinator
+        pipelineCoordinator?.setProcessingEnabled(false)
+        
         videoSegmentationEngine?.stopProcessing()
         performanceMonitor?.stopMonitoring()
         isProcessing = false
@@ -184,6 +205,26 @@ final class CameraViewModel: ObservableObject {
         videoSegmentationEngine?.delegate = self
         promptHandler?.delegate = self
         performanceMonitor?.delegate = self
+    }
+    
+    private func setupVideoPipeline() {
+        guard let engine = videoSegmentationEngine,
+              let handler = promptHandler else {
+            logger.error("Cannot setup video pipeline: missing dependencies")
+            return
+        }
+        
+        // Create pipeline coordinator
+        pipelineCoordinator = VideoPipelineCoordinator(
+            videoSegmentationEngine: engine,
+            promptHandler: handler
+        )
+        
+        // Connect camera output to pipeline coordinator
+        if let coordinator = pipelineCoordinator {
+            cameraManager?.setVideoOutput(delegate: coordinator)
+            logger.info("Video pipeline connected: Camera -> Coordinator -> SegmentationEngine")
+        }
     }
     
     private func setupBindings() {
