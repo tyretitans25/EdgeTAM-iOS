@@ -18,6 +18,7 @@ final class CameraViewModel: ObservableObject {
     @Published var hasProcessedFrames = false
     @Published var isSwitchingCamera = false
     @Published var isCameraReady = false
+    @Published var currentMaskImage: UIImage?
     
     // MARK: - Properties
     
@@ -118,6 +119,12 @@ final class CameraViewModel: ObservableObject {
                     
                     // Mark camera as ready
                     isCameraReady = session.isRunning
+                    
+                    if isCameraReady {
+                        // Pre-load models in background to be ready for tapping
+                        logger.info("Camera ready, pre-loading models...")
+                        try? await videoSegmentationEngine?.loadModels()
+                    }
                 }
             } catch {
                 currentError = EdgeTAMError.from(error)
@@ -174,13 +181,17 @@ final class CameraViewModel: ObservableObject {
     
     func addPrompt(_ prompt: Prompt) {
         currentPrompts.append(prompt)
-        
+
         Task {
+            // CameraView already computes normalized (0-1) model coordinates via
+            // captureDevicePointConverted. Pass those as the location with a 1x1
+            // frame so PromptHandler's normalization is a no-op (x/1 = x), then
+            // it scales correctly to the 1024x1024 model input space.
             switch prompt {
             case .point(let pointPrompt):
-                promptHandler?.addPointPrompt(at: pointPrompt.location, in: CGRect(x: 0, y: 0, width: 1, height: 1))
+                promptHandler?.addPointPrompt(at: pointPrompt.modelCoordinates, in: CGRect(x: 0, y: 0, width: 1, height: 1))
             case .box(let boxPrompt):
-                promptHandler?.addBoxPrompt(with: boxPrompt.rect, in: CGRect(x: 0, y: 0, width: 1, height: 1))
+                promptHandler?.addBoxPrompt(with: boxPrompt.modelCoordinates, in: CGRect(x: 0, y: 0, width: 1, height: 1))
             case .mask(let maskPrompt):
                 promptHandler?.addMaskPrompt(with: maskPrompt.maskBuffer)
             }
@@ -191,6 +202,7 @@ final class CameraViewModel: ObservableObject {
     func clearAllPrompts() {
         currentPrompts.removeAll()
         promptHandler?.clearPrompts()
+        currentMaskImage = nil
         logger.info("All prompts cleared")
     }
     
@@ -246,6 +258,63 @@ final class CameraViewModel: ObservableObject {
         // Update other metrics from engine if needed
     }
     
+    /// Convert a single-channel (OneComponent8) mask CVPixelBuffer to a colored UIImage
+    private func maskPixelBufferToUIImage(_ pixelBuffer: CVPixelBuffer) -> UIImage? {
+        CVPixelBufferLockBaseAddress(pixelBuffer, .readOnly)
+        defer { CVPixelBufferUnlockBaseAddress(pixelBuffer, .readOnly) }
+
+        let width = CVPixelBufferGetWidth(pixelBuffer)
+        let height = CVPixelBufferGetHeight(pixelBuffer)
+        let bytesPerRow = CVPixelBufferGetBytesPerRow(pixelBuffer)
+
+        guard let baseAddress = CVPixelBufferGetBaseAddress(pixelBuffer) else { return nil }
+
+        // Create RGBA image from grayscale mask
+        // Mask values: 0 = background (transparent), 255 = foreground (colored overlay)
+        let rgbaSize = width * height * 4
+        let rgbaData = UnsafeMutablePointer<UInt8>.allocate(capacity: rgbaSize)
+        defer { rgbaData.deallocate() }
+
+        let srcPointer = baseAddress.bindMemory(to: UInt8.self, capacity: height * bytesPerRow)
+
+        for y in 0..<height {
+            for x in 0..<width {
+                let maskValue = srcPointer[y * bytesPerRow + x]
+                let rgbaOffset = (y * width + x) * 4
+
+                // Threshold: values > 128 are foreground
+                if maskValue > 128 {
+                    // Semi-transparent blue overlay for segmented region
+                    rgbaData[rgbaOffset + 0] = 0     // R
+                    rgbaData[rgbaOffset + 1] = 120   // G
+                    rgbaData[rgbaOffset + 2] = 255   // B
+                    rgbaData[rgbaOffset + 3] = 160   // A (semi-transparent)
+                } else {
+                    // Fully transparent for background
+                    rgbaData[rgbaOffset + 0] = 0
+                    rgbaData[rgbaOffset + 1] = 0
+                    rgbaData[rgbaOffset + 2] = 0
+                    rgbaData[rgbaOffset + 3] = 0
+                }
+            }
+        }
+
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        guard let context = CGContext(
+            data: rgbaData,
+            width: width,
+            height: height,
+            bitsPerComponent: 8,
+            bytesPerRow: width * 4,
+            space: colorSpace,
+            bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
+        ), let cgImage = context.makeImage() else {
+            return nil
+        }
+
+        return UIImage(cgImage: cgImage)
+    }
+
     private func storeProcessedFrame(_ frame: ProcessedFrame) {
         processedFrames.append(frame)
         
@@ -374,6 +443,12 @@ extension CameraViewModel: VideoSegmentationEngineDelegate {
         Task { @MainActor in
             storeProcessedFrame(frame)
             performanceMonitor?.recordFrame()
+
+            // Convert best mask to UIImage for display
+            if let bestMask = frame.segmentationMasks.max(by: { $0.confidence < $1.confidence }) {
+                currentMaskImage = maskPixelBufferToUIImage(bestMask.maskBuffer)
+                logger.debug("Mask updated: confidence=\(bestMask.confidence), image=\(self.currentMaskImage != nil ? "OK" : "nil")")
+            }
         }
     }
     

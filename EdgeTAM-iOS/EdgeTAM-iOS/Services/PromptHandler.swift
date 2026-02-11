@@ -250,11 +250,15 @@ class PromptHandler: PromptHandlerProtocol, @unchecked Sendable {
     }
     
     private func validatePointPrompt(_ pointPrompt: PointPrompt) -> Bool {
-        // Check if point is within reasonable bounds (model coordinates should be positive)
-        guard pointPrompt.modelCoordinates.x >= 0 && pointPrompt.modelCoordinates.y >= 0 else {
+        // Check if model coordinates are within the 1024x1024 model input bounds
+        let modelSize: CGFloat = 1024
+        guard pointPrompt.modelCoordinates.x >= 0 &&
+              pointPrompt.modelCoordinates.y >= 0 &&
+              pointPrompt.modelCoordinates.x <= modelSize &&
+              pointPrompt.modelCoordinates.y <= modelSize else {
             return false
         }
-        
+
         // Check minimum distance from other point prompts if required
         if validationRules.requireMinimumDistance > 0 {
             for existingPrompt in activePrompts {
@@ -269,7 +273,7 @@ class PromptHandler: PromptHandlerProtocol, @unchecked Sendable {
                 }
             }
         }
-        
+
         return true
     }
     
@@ -311,12 +315,13 @@ class PromptHandler: PromptHandlerProtocol, @unchecked Sendable {
     private func determineValidationError(for prompt: Prompt, in frame: CGRect) -> PromptValidationError {
         switch prompt {
         case .point(let pointPrompt):
-            // Check if point is out of bounds
-            if pointPrompt.location.x < 0 || pointPrompt.location.y < 0 ||
-               pointPrompt.location.x > frame.width || pointPrompt.location.y > frame.height {
+            // Check if model coordinates are out of the 1024x1024 model input bounds
+            let modelSize: CGFloat = 1024
+            if pointPrompt.modelCoordinates.x < 0 || pointPrompt.modelCoordinates.y < 0 ||
+               pointPrompt.modelCoordinates.x > modelSize || pointPrompt.modelCoordinates.y > modelSize {
                 return .pointOutOfBounds
             }
-            
+
             // Check minimum distance
             if validationRules.requireMinimumDistance > 0 {
                 for existingPrompt in activePrompts {
@@ -331,7 +336,7 @@ class PromptHandler: PromptHandlerProtocol, @unchecked Sendable {
                     }
                 }
             }
-            
+
             return .pointOutOfBounds
             
         case .box(let boxPrompt):

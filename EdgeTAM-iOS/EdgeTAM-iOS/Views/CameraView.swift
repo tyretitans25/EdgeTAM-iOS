@@ -7,14 +7,16 @@ struct CameraPreviewView: UIViewRepresentable {
     let session: AVCaptureSession
     @Binding var previewLayer: AVCaptureVideoPreviewLayer?
     
-    func makeUIView(context: Context) -> UIView {
-        let view = UIView(frame: CGRect.zero)
+    func makeUIView(context: Context) -> PreviewView {
+        let view = PreviewView()
+        view.backgroundColor = .black
         
         let previewLayer = AVCaptureVideoPreviewLayer(session: session)
-        previewLayer.frame = view.layer.bounds
         previewLayer.videoGravity = .resizeAspectFill
+        previewLayer.frame = view.bounds
         
         view.layer.addSublayer(previewLayer)
+        view.previewLayer = previewLayer
         
         DispatchQueue.main.async {
             self.previewLayer = previewLayer
@@ -23,10 +25,20 @@ struct CameraPreviewView: UIViewRepresentable {
         return view
     }
     
-    func updateUIView(_ uiView: UIView, context: Context) {
-        if let previewLayer = uiView.layer.sublayers?.first as? AVCaptureVideoPreviewLayer {
-            previewLayer.frame = uiView.layer.bounds
+    func updateUIView(_ uiView: PreviewView, context: Context) {
+        DispatchQueue.main.async {
+            uiView.previewLayer?.frame = uiView.bounds
         }
+    }
+}
+
+/// Custom UIView that properly handles layout for the preview layer
+class PreviewView: UIView {
+    var previewLayer: AVCaptureVideoPreviewLayer?
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        previewLayer?.frame = bounds
     }
 }
 
@@ -43,27 +55,43 @@ struct CameraView: View {
         GeometryReader { geometry in
             ZStack {
                 // Camera preview
-                CameraPreviewView(
-                    session: viewModel.captureSession,
-                    previewLayer: $previewLayer
-                )
-                .clipped()
-                .onTapGesture { location in
-                    handleTapGesture(at: location, in: geometry.size)
-                }
-                .gesture(
-                    DragGesture()
-                        .onEnded { value in
-                            handleDragGesture(start: value.startLocation, end: value.location, in: geometry.size)
+                if viewModel.isCameraReady {
+                    CameraPreviewView(
+                        session: viewModel.captureSession,
+                        previewLayer: $previewLayer
+                    )
+                    .clipped()
+                    .onTapGesture { location in
+                        handleTapGesture(at: location, in: geometry.size)
+                    }
+                    .gesture(
+                        DragGesture()
+                            .onEnded { value in
+                                handleDragGesture(start: value.startLocation, end: value.location, in: geometry.size)
+                            }
+                    )
+                } else {
+                    // Show loading state while camera initializes
+                    ZStack {
+                        Color.black
+                        VStack(spacing: 16) {
+                            ProgressView()
+                                .scaleEffect(1.5)
+                                .tint(.white)
+                            Text("Initializing camera...")
+                                .foregroundColor(.white)
+                                .font(.headline)
                         }
-                )
+                    }
+                }
                 
                 // Overlay for segmentation masks
-                if viewModel.showMasks {
+                if viewModel.showMasks, viewModel.currentMaskImage != nil {
                     MaskOverlayView(
-                        trackedObjects: viewModel.trackedObjects,
+                        maskImage: viewModel.currentMaskImage,
                         opacity: viewModel.maskOpacity
                     )
+                    .clipped()
                 }
                 
                 // Top controls
@@ -174,6 +202,7 @@ struct CameraView: View {
                                     .foregroundColor(.white)
                             }
                         }
+                        .disabled(!viewModel.isCameraReady || selectedPrompts.isEmpty)
                         
                         Spacer()
                         
@@ -242,19 +271,30 @@ struct CameraView: View {
     private func setupCamera() {
         viewModel.setupDependencies(dependencyContainer)
         viewModel.requestCameraPermission { granted in
-            if granted {
-                viewModel.startCamera()
+            Task { @MainActor in
+                if granted {
+                    viewModel.startCamera()
+                }
             }
         }
     }
     
     private func handleTapGesture(at location: CGPoint, in size: CGSize) {
-        // Convert tap location to normalized coordinates
-        let normalizedPoint = CGPoint(
-            x: location.x / size.width,
-            y: location.y / size.height
-        )
-        
+        // Convert screen tap to camera-space normalized coordinates using the preview layer.
+        // This accounts for .resizeAspectFill cropping and any orientation transforms.
+        let normalizedPoint: CGPoint
+        if let layer = previewLayer {
+            // captureDevicePointConverted returns (0,0)-(1,1) in camera sensor space
+            let devicePoint = layer.captureDevicePointConverted(fromLayerPoint: location)
+            normalizedPoint = devicePoint
+        } else {
+            // Fallback: simple normalization (won't account for aspect fill crop)
+            normalizedPoint = CGPoint(
+                x: location.x / size.width,
+                y: location.y / size.height
+            )
+        }
+
         // Create point prompt
         let pointPrompt = Prompt.point(PointPrompt(
             location: location,
@@ -264,18 +304,24 @@ struct CameraView: View {
         
         selectedPrompts.append(pointPrompt)
         viewModel.addPrompt(pointPrompt)
+        
+        // Auto-start processing if not already running
+        if !viewModel.isProcessing {
+            viewModel.startProcessing()
+        }
     }
     
     private func handleDragGesture(start: CGPoint, end: CGPoint, in size: CGSize) {
-        // Convert drag to normalized coordinates
-        let normalizedStart = CGPoint(
-            x: start.x / size.width,
-            y: start.y / size.height
-        )
-        let normalizedEnd = CGPoint(
-            x: end.x / size.width,
-            y: end.y / size.height
-        )
+        // Convert drag to camera-space normalized coordinates
+        let normalizedStart: CGPoint
+        let normalizedEnd: CGPoint
+        if let layer = previewLayer {
+            normalizedStart = layer.captureDevicePointConverted(fromLayerPoint: start)
+            normalizedEnd = layer.captureDevicePointConverted(fromLayerPoint: end)
+        } else {
+            normalizedStart = CGPoint(x: start.x / size.width, y: start.y / size.height)
+            normalizedEnd = CGPoint(x: end.x / size.width, y: end.y / size.height)
+        }
         
         // Create bounding box
         let minX = min(normalizedStart.x, normalizedEnd.x)
@@ -303,6 +349,11 @@ struct CameraView: View {
             ))
             selectedPrompts.append(boxPrompt)
             viewModel.addPrompt(boxPrompt)
+            
+            // Auto-start processing if not already running
+            if !viewModel.isProcessing {
+                viewModel.startProcessing()
+            }
         }
     }
 }
@@ -311,31 +362,35 @@ struct CameraView: View {
 struct PromptIndicatorView: View {
     let prompt: Prompt
     let index: Int
-    
+
     var body: some View {
         GeometryReader { geometry in
             switch prompt {
             case .point(let pointPrompt):
+                // Use the original screen tap location for the dot so it
+                // appears exactly where the user tapped, regardless of
+                // camera aspect-fill cropping.
                 Circle()
                     .fill(pointPrompt.isPositive ? Color.green : Color.red)
                     .frame(width: 20, height: 20)
                     .position(
-                        x: pointPrompt.modelCoordinates.x * geometry.size.width,
-                        y: pointPrompt.modelCoordinates.y * geometry.size.height
+                        x: pointPrompt.location.x,
+                        y: pointPrompt.location.y
                     )
-                
+
             case .box(let boxPrompt):
+                // Use the original screen rect for the box indicator
                 Rectangle()
                     .stroke(Color.blue, lineWidth: 2)
                     .frame(
-                        width: boxPrompt.modelCoordinates.width * geometry.size.width,
-                        height: boxPrompt.modelCoordinates.height * geometry.size.height
+                        width: boxPrompt.rect.width,
+                        height: boxPrompt.rect.height
                     )
                     .position(
-                        x: (boxPrompt.modelCoordinates.minX + boxPrompt.modelCoordinates.width / 2) * geometry.size.width,
-                        y: (boxPrompt.modelCoordinates.minY + boxPrompt.modelCoordinates.height / 2) * geometry.size.height
+                        x: boxPrompt.rect.midX,
+                        y: boxPrompt.rect.midY
                     )
-                
+
             case .mask(_):
                 EmptyView()
             }
@@ -345,14 +400,17 @@ struct PromptIndicatorView: View {
 
 /// View for displaying segmentation mask overlays
 struct MaskOverlayView: View {
-    let trackedObjects: [TrackedObject]
+    let maskImage: UIImage?
     let opacity: Double
-    
+
     var body: some View {
-        // This would be implemented with Metal or Core Graphics
-        // For now, showing a placeholder
-        Rectangle()
-            .fill(Color.clear)
+        if let image = maskImage {
+            Image(uiImage: image)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .opacity(opacity)
+                .allowsHitTesting(false)
+        }
     }
 }
 
